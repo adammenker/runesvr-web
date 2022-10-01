@@ -1,29 +1,26 @@
 import React from "react";
-import { products } from "../assets/WikiItemData"
-import '../styles/WikiItems.css'
+import { weapons, beasts } from "../assets/WikiItemData"
+import '../styles/WikiItems.css';
+import '../styles/WikiTabs.css';
+
+import { Tabs } from 'flowbite-react/lib/cjs/components/Tab';
+import WikiItems from '../components/WikiItems';
+
 
 export default function Wiki() {
     return (
-        <div id="wiki-item-container" className="bg-[#131722]">
-            <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-200">Customers also purchased</h2>
-
-                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                {products.map((product) => (
-                    <div key={product.id} className="group relative">
-                        <div className="min-h-80  w-full overflow-hidden rounded-md bg-[#1D1E20] group-hover:opacity-75 lg:aspect-none lg:h-80">
-                            <h2 className="text-2xl font-bold tracking-tight text-gray-900 wiki-item-title">Customers also purchased</h2>
-                            <img
-                            src={product.imageSrc}
-                            alt={product.imageAlt}
-                            className="wiki-item-image"
-                            />
-                            <p className="mt-1 text-sm text-gray-500">more details</p>
-                        </div>
-                    </div>
-                ))}
-                </div>
-            </div>
-        </div>
+        <div id="tabs-container" >
+            <Tabs.Group aria-label="Pills" class="flex text-center flex-wrap border-b border-gray-200 dark:border-gray-700">
+                <Tabs.Item active={true} title="weapons" class="flex items-center justify-center p-4 text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 active rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">
+                    <WikiItems wikiItems={weapons} />
+                </Tabs.Item>
+                <Tabs.Item title="animals" class="flex items-center justify-center p-4 text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 active rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">
+                    <WikiItems wikiItems={beasts} />
+                </Tabs.Item>
+                <Tabs.Item title="lorem" class="flex items-center justify-center p-4 text-sm font-medium first:ml-0 disabled:cursor-not-allowed disabled:text-gray-400 disabled:dark:text-gray-500 active rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">
+                 
+                </Tabs.Item>
+            </Tabs.Group>
+        </div>  
     )
 }

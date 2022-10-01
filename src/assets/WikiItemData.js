@@ -1,10 +1,22 @@
 import sword from '../assets/sword.webp';
+import mc_dog from '../assets/mc_dog.png';
 
-export const products = Array(5).fill({
+
+export const weapons = Array(5).fill({
     id: 1,
     name: 'Basic Tee',
     href: '#',
     imageSrc: sword,
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+})
+
+export const beasts = Array(5).fill({
+    id: 1,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: mc_dog,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',

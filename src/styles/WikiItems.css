@@ -1,6 +1,6 @@
-
-#wiki-item-container {
+.wiki-item-container > * {
     height: 100%;
+    cursor: pointer;
 }
 
 .wiki-item-image {
@@ -11,8 +11,32 @@
     padding: 20px;
 }
 
+.wiki-item-image-container {
+
+}
+
+.wiki-item-more-details {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.wiki-item-description-container {
+    display: none;
+}
+
 .wiki-item-title {
     color: white;
     text-align: center;
     padding: 10px 10px 10px 10px;
+}
+
+
+.cont {
+    
+}
+
+.cont2 {
+  
 }
