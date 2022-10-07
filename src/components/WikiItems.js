@@ -1,5 +1,4 @@
 import React from 'react';
-import {useState} from 'react';
 import '../styles/WikiItems.css';
 
 export default function WikiItems(props) {

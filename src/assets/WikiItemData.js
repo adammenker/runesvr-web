@@ -12,7 +12,7 @@ export const weapons = Array(5).fill({
     color: 'Black',
 })
 
-export const beasts = Array(5).fill({
+export const beasts = Array(15).fill({
     id: 1,
     name: 'Basic Tee',
     href: '#',

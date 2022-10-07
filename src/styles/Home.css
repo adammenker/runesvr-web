@@ -1,0 +1,25 @@
+#home-container {
+    height: 100%;
+}
+
+div #canvas {
+    position: fixed !important;
+    top: 0;
+    display: none;
+}
+
+h1 {
+    color: #fff;
+    font-size: 128px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+#download-button {
+    font-weight: bold;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 40px;
+}
