@@ -20,6 +20,9 @@ export default function Home() {
                 download now
             </Button>
             </div>
+            <h2>
+                RunesVR is a video game which brings a fresh revival to the nostalgic RPG games of our youth through the use of modern technology and the VR platform.
+            </h2>
             <Canvas id="canvas">
                 <Suspense fallback={null}>
                 <PerspectiveCamera
