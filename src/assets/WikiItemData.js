@@ -4,23 +4,23 @@ import mc_dog from '../assets/mc_dog.png';
 
 export const weapons = Array(5).fill({
     id: 1,
-    name: 'Basic Tee',
+    name: 'Sword',
     href: '#',
     imageSrc: sword,
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    imageAlt: "Sword",
+    detail1: 'Damage: 14',
+    detail2: 'Durability: 25'
 })
 
 export const beasts = [
     {
         id: 1,
-        name: 'Basic Tee',
+        name: 'Dog',
         href: '#',
         imageSrc: mc_dog,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black'
+        imageAlt: "Dog.",
+        detail1: 'Damage: 6',
+        detail2: 'Health: 25'
     }
 ]
 
